@@ -123,4 +123,5 @@ def process_meeting():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=DEBUG, host='0.0.0.0', port=5000)
+    # Railway and similar hosts inject PORT at runtime; fall back to 5000 locally.
+    app.run(debug=DEBUG, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
