@@ -2,7 +2,6 @@
 
 Transcribe meeting audio and generate action-oriented summaries using AI.
 
-> [!IMPORTANT]
 Live app: https://meeting-summarizer-six-ivory.vercel.app/     
 > [!WARNING]
 > If you encounter a **"Failed to fetch"** error, try connecting your device to a **mobile hotspot** instead of your **Wi-Fi router**, then try again.
