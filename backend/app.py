@@ -7,7 +7,18 @@ from transcriber import AudioTranscriber
 from summarizer import MeetingSummarizer
 
 app = Flask(__name__)
-CORS(app)
+# Allow the deployed Vercel frontend and local dev origins.
+CORS(
+    app,
+    resources={
+        r"/*": {
+            "origins": [
+                "https://meeting-summarizer-six-ivory.vercel.app",
+                "http://localhost:5173",
+            ]
+        }
+    },
+)
 app.json.ensure_ascii = False
 
 # Initialize services
