@@ -6,3 +6,4 @@ requests>=2.31.0
 pydantic>=2.5.0
 httpx>=0.24.0
 sarvamai
+gunicorn>=21.2.0
