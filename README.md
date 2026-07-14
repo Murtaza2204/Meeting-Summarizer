@@ -2,6 +2,8 @@
 
 Transcribe meeting audio and generate action-oriented summaries using AI.
 
+Live app: https://meeting-summarizer-six-ivory.vercel.app/
+
 ## Objective
 Transcribe meeting audio files and generate summaries with key decisions and action items.
 
